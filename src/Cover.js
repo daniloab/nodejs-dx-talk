@@ -7,7 +7,7 @@ const Background = styled.div`
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: #fff;
+  background-color: #04010F;
   justify-content: center;
   align-items: center;
 `;
@@ -27,8 +27,9 @@ const Cover = () => {
   return (
     <Background>
       <Container>
-        <h1>Materialized Views with MongoDB</h1>
-        <Img src="./img/cover.png" width={"400px"} />
+        <h1>DX with Node Js</h1>
+        <h2>How to improve your developing experience with Node Js</h2>
+        <Img src="./img/nodejs-1-logo-png-transparent.png" width={"400px"} />
         <h3>Danilo Assis</h3>
       </Container>
     </Background>
