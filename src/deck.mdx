@@ -77,13 +77,9 @@ import Practice from './Practice'
 
 # Learn in Public - Read List
 
-- [Learn in Public](https://dev.to/daniloab/how-to-learn-in-public-9ng)
-- [How to put the Learning in Public in practice](https://dev.to/daniloab/ways-to-put-the-learning-in-public-in-practice-4h2c)
-- [How to avoid frustration while learning something new](https://dev.to/daniloab/why-getting-frustrated-is-too-boring-578p)
-
----
-
-<Practice />
+- [Learn in Public - by Danilo Assis](https://dev.to/daniloab/how-to-learn-in-public-9ng)
+- [How to put the Learning in Public in practice - by Danilo Assis](https://dev.to/daniloab/ways-to-put-the-learning-in-public-in-practice-4h2c)
+- [How to avoid frustration while learning something new - by Danilo Assis](https://dev.to/daniloab/why-getting-frustrated-is-too-boring-578p)
 
 ---
 
@@ -116,133 +112,149 @@ import Practice from './Practice'
 
 ---
 
-# Comparison with Standard Views
+# Documentation
+
+<div>
+ <img src='./img/playbook.jpeg' />
+</div>
+
+---
+
+# Documentation - Team
 
 <ul>
-  <Appear>
-    <li>MongoDB offer both</li>
-    <li>Materialized is saved on disk</li>
-    <li>$merge or $out stage to update the saved data</li>
-    <li>both results from aggregation pipeline</li>
-  </Appear>
+    <Appear>
+        <li>Improved Efficiency</li>
+        <li>Consistency</li>
+        <li>Onboarding and Training</li>
+        <li>Knowledge Transfer</li>
+        <li>Scalability</li>
+        <li>Continuity</li>
+        <li>Team Playbook</li>
+    </Appear>
 </ul>
 
 ---
 
-# Indexes and Performance
+# Documentation - Yourself
 
 <ul>
-  <Appear>
-    <li>Standard use indexes from underlying collection</li>
-    <li>Materialized can has it own indexes</li>
-    <li>Materialized allow faster access to data reading from disk</li>
-  </Appear>
+    <Appear>
+        <li>Problem Pattern Matching</li>
+        <li>Consistency</li>
+        <li>Personal Growth</li>
+        <li>Retention and Recall</li>
+        <li>Remember Things</li>
+        <li>Own Playbook</li>
+    </Appear>
 </ul>
 
 ---
 
-# How do materialized views work?
+<div>
+    <img src='./img/my-workspace.png' />
+</div>
+
+---
+
+# Strategies
 
 <ul>
-  <Appear>
-    <li>aggregate performs the calc</li>
-    <li>$merge writes the output, update matched previous results</li>
-    <li>Regularly updates</li>
-    <li>Jobs</li>
-  </Appear>
+    <Appear>
+        <li>Second Brain</li>
+        <li>Digital Garden</li>
+        <li>Blog post</li>
+        <li>Just take notes</li>
+    </Appear>
 </ul>
 
 ---
 
-# Benefits of using materialized views
+# Second Brain
+
+<div>
+    <img src='./img/second-brain.png' />
+</div>
+
+---
+
+# Second Brain
+
+<div>
+    <img src='./img/second-brain2.png' width={'1000px'} />
+</div>
+
+---
+
+<Practice />
+
+---
+
+# Environment
 
 <ul>
-  <Appear>
-    <li>Deliver high-quality software</li>
-    <li>Allow faster access to data</li>
-    <li>Benefits in data privacy</li>
-    <li>Increase of performance</li>
-    <li>Split in databases</li>
-    <li>Simplify complex queries</li>
-    <li>Big O of queries</li>
-  </Appear>
+    <Appear>
+        <li>Easier to move and contribute</li>
+        <li>Ship Faster</li>
+        <li>Routine</li>
+        <li>Playground</li>
+    </Appear>
 </ul>
 
 ---
 
-# Use cases for materialized views in MongoDB
+# CodeSandbox
 
-<ul>
-  <Appear>
-    <li>Complex analytics queries</li>
-    <li>Improve performance</li>
-    <li>Support for real time dashboards</li>
-    <li>Cache frequently accessed data</li>
-    <li>Abstract data from many collections/tables into only one</li>
-  </Appear>
-</ul>
+<div>
+    <img src='./img/codesandbox.png' width={'1500px'} />
+</div>
 
 ---
 
-# $merge and $out stage
+# StackBlitz
+
+<div>
+    <img src='./img/stack-blitz.png' width={'1500px'} />
+</div>
+
+---
+
+# Woovi Scripts
 
 <ul>
-  <Appear>
-      <li>Can output to a collection in the same or different database.</li>
-      <li>Creates a new collection if the output collection does not already exist.</li>
-      <li>Can incorporate results (insert new documents, merge documents, replace documents, keep existing documents, fail the operation, process documents with a custom update pipeline) into an existing collection.</li>
-      <li>Can output to a sharded collection. Input collection can also be sharded.</li>
-      <li>Merge save/update a result in a collection</li>
-      <li>Out save/replace a result in a collection</li>
-  </Appear>
+    <Appear>
+        <li>Collocation</li>
+        <li>Scalability</li>
+        <li>Reusable</li>
+        <li>Maintainable</li>
+    </Appear>
 </ul>
 
 ---
 
 <Code
-  title="Materialized Views with Merge Stage"
-  code={require("!raw-loader!./code/mv-merge.ts")}
-  showNumbers={false}
-  dark={true}
-  lang="ts"
+    title="Scripts Calling API"
+    code={require("!raw-loader!./code/chargePostScript.ts")}
+    showNumbers={false}
+    dark={true}
+    lang="ts"
 />
 
 ---
 
-<Code
-  title="Materialized Views with Out Stage"
-  code={require("!raw-loader!./code/mv-out.ts")}
-  showNumbers={false}
-  dark={true}
-  lang="ts"
-/>
+# Request Result - Error
+
+<div>
+    <img src='./img/charge-post-result.png' width={'1500px'} />
+</div>
 
 ---
 
-# Best practices for using materialized views
+# Request Result - Success
 
-<ul>
-  <Appear>
-    <li>Updated regularly</li>
-    <li>Careful with pipeline stages</li>
-    <li>Good use of indexes with group stage</li>
-    <li>Chunk Size</li>
-    <li>Shard Key</li>
-  </Appear>
-</ul>
-
----
-
-# Drawbacks of using materialized views
-
-<ul>
-  <Appear>
-    <li>Increased Storage</li>
-    <li>Write Latency</li>
-    <li>Increased complexity</li>
-    <li>Stale data</li>
-  </Appear>
-</ul>
+<div>
+    <img src='./img/charge-post-result.png' width={'1500px'} />
+</div>
 
 ---
 
