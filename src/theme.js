@@ -4,7 +4,7 @@ export default {
   ...dark,
   colors: {
     ...dark.colors,
-    background: '#03d69d',
+    background: '#04010F',
   },
   font: "'Nunito', sans-serif",
   monospace: "'Cascadia Code', monospace",
