@@ -52,7 +52,7 @@ const Intro = () => {
                 </Social>
             </Socials>
             <Woovi>
-                <WooviLogo width="240px" fillColor="#fff" />
+                <WooviLogo width="240px" fillColor="#03d69d" />
                 <Title>Tech Lead</Title>
             </Woovi>
         </>
